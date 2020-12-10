@@ -20,6 +20,20 @@ FPS     = 30
 BG_COLOUR = [0, 0, 0]
 IS_RUNNING = True
 
+class Blauwdruk:
+
+    Lives = 5
+    Coins = 10
+    def __init__(self, Lives):
+        self.Lives = Lives
+
+print("Blauwdruk.Lives", Blauwdruk.Lives)
+
+Player1 = Blauwdruk
+Player1.Lives = 10
+
+print("Player1.Lives", Player1.Lives)
+
 
 playerSprite = pygame.image.load("../Art/spr_Player.png")
 playerRect = playerSprite.get_rect()
